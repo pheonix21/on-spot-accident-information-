@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>police station</title>
+        <link rel="stylesheet" href="polic.css" type="text/css">
+    </head>
+    <body>
+        <form action="police" class="ll">
+            <img src="hey.jpg" height="120" alt="error">
+			<h3  align="center"><b><u> Police station Registration </u></b></h3>
+			<div class="lo">
+                <input type="number" name="pid" required>
+                <span data-placeholder="Police station  ID" ></span>
+            </div>
+            <div class="lo">
+                <input type="text" name="pname" required>
+                <span data-placeholder="Police station name"></span>
+            </div>
+             <div class="lo">
+                <input type="text" name="pzone" required>
+                <span data-placeholder="Zone" ></span>
+            </div>
+			<div class="lo">
+                <input type="text" name="pstate" required>
+                <span data-placeholder="State" ></span>
+            </div>
+            <div class="lo">
+                <input type="text" name="paddress" required>
+                <span data-placeholder="police station address"></span>
+            </div>
+			
+
+            <div class="lo">
+                <input type="number" name="pid" required>
+                <span data-placeholder="pincode" ></span>
+            </div>
+			 <div class="lo">
+                <input type="number" name="pnum" required>
+                <span data-placeholder="phone-number" ></span>
+            </div>
+			<div class="lo">
+                <input type="email" name="pemail" required>
+                <span data-placeholder="Enter email" ></span>
+            </div>
+			<div class="lo">
+                <input type="password" name="psswrd" required>
+                <span data-placeholder="Enter password" ></span>
+            </div>
+			<div class="lo">
+                <input type="password" name="cpsswrd" required>
+                <span data-placeholder="Confirm password" ></span>
+            </div>
+              
+            <input type="submit" class="lp">
+
+        </form>
+
+
+        <script type="text/javascript">
+            $(".lo input").on("focus",function(){
+                $(this).addClass("focus");
+            });
+
+            $(".lo input").on("blur",function(){
+                if($(this).val() == "")
+                $(this).removeClass("focus");
+            });
+        </script>
+    </body>
+</html>

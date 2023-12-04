@@ -1,0 +1,41 @@
+body {
+    font-family: sans-serif;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+}
+
+main {
+    padding: 20px;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #ffffff;
+    padding: 20px;
+}

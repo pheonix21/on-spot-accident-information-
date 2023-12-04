@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Police Officer Sign Up Form</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Police Officer Sign Up Form</h1>
+  <form action="#">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="police_unique_id">Police Unique ID:</label>
+    <input type="text" id="police_unique_id" name="police_unique_id" required>
+
+    <label for="station">Station:</label>
+    <input type="text" id="station" name="station" required>
+
+    <label for="branch">Branch:</label>
+    <input type="text" id="branch" name="branch" required>
+
+    <label for="pincode">Pincode:</label>
+    <input type="number" id="pincode" name="pincode" required>
+
+    <button type="submit">Sign Up</button>
+  </form>
+</div>
+</body>
+</html>

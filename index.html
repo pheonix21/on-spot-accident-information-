@@ -1,0 +1,146 @@
+<html>
+    <head>
+        <title>PROGRESSIVE INSURANCE CLAIMS </title>
+      <link rel="stylesheet" href="style.css">
+      <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    </head>
+    <script>
+
+    
+    // Replace with your actual MongoDB URL
+    const url = "mongodb://localhost:27017/register";
+
+    // Create a MongoClient instance
+    const client = new MongoClient(url);
+
+    // Connect to the MongoDB database
+    client.connect((err, db) => {
+        if (err) {
+            console.error(err);
+            return;
+        }
+
+        // Fetch data from the 'products' collection
+        const productsCollection = db.collection('products');
+        productsCollection.find().toArray((err, products) => {
+            if (err) {
+                console.error(err);
+                return;
+            }
+
+            // Display the retrieved products in the webpage
+            const dataContainer = document.getElementById('data-container');
+            const productList = products.map(product => {
+                return `<li>${product.name} - ${product.price}</li>`;
+            }).join('');
+            dataContainer.innerHTML = `<h2>Products List</h2><ul>${productList}</ul>`;
+        });
+    });
+</script>
+
+    <body>
+        <div class="banner">
+
+           <div class="navbar">
+            <img src="progressive.jpeg" class="logo">
+            <ul>
+                  <li><a href="index.html">HOME</a></li>
+                  <li><a href="login as.html">LOGIN</a></li>
+                  <li><a href="sign in as.html">SIGN UP</a></li>
+                  <li><a href="https://www.tomtom.com/traffic-index/bengaluru-traffic/">LIVE TRAFFIC REPORT</a></li>
+                  <li><a href="track claims.html">TRACK YOUR CLAIMS</a></li>
+            </ul>
+           </div>
+           
+<div class="content">
+
+<h1 class="heading-1">REGISTER  YOUR CLAIMS </h1>
+<p> to add your accident details sign up or if ypu are existing user just login 
+    and click on the "add claim" button below.
+   <br> NOTE_ police dept , transport dept  ids and password has already been given 
+    local volunteers have to create ids and then login
+</p>
+<div>
+    <a href="authentication.html"><button type="button"><span></span> REGISTER CLAIMS</button></a>
+    <a href="sign in as.html"><button type="button"><span></span> SIGN UP AS</button></a>
+</div>
+</div>
+        </div>
+
+        
+    </body>
+    <body>
+        <div class="steps ">
+            <i class="bi bi-question-lg"></i>
+            <div class="steps-section">
+              <h5>FAQ</h5>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut aliquam,
+                neque aliquid qui nulla quibusdam quos natus temporibus consequuntur
+                vero recusandae illum provident aut ex, assumenda nobis?
+              </p>
+            </div>
+    </body>
+    <footer>
+        <nav class="social">
+            <ul>
+                <li><a href="https://www.instagram.com/">Instagram <i class='bx bxl-instagram'></i></a></li>
+                <li><a href="https://www.facebook.com/"> facebook <i class='bx bxl-facebook'></i></a></li>
+                <li><a href="https://twitter.com/">Twitter <i class='bx bxl-twitter' ></i></a></li>
+                <li><a href="email: mariorithik21@gmail.com">Mail us <i class='bx bx-envelope' ></i></a></li>
+                <li><a href="tel: 971-534-8675">Call us at <i class='bx bx-phone-call'></i></a></li>
+    
+            </ul>
+        </nav>
+            <p> Copyright @2024 developed by Mhd Arhan</p>
+         
+            <p>
+                <br>
+                
+                Copyright Notice
+
+                <br>
+                
+                    Copyright © Claim Ease 2024
+
+                    <br>
+
+                <br>
+                Company Information
+                <br>
+                
+                    Company Name: Claim ease
+
+                    <br>
+                    License Number: GS1981NB98758
+
+                    <br>
+                    Terms of Use: PLease refer to the document provided
+
+                    <br>
+                    Privacy Policy: As mentioned 
+
+
+                
+                Additional Information
+
+                <br>
+                
+                    Disclaimer: The information contained on this website is for general information purposes only and does not constitute legal or financial advice. You should consult with an appropriate professional for specific advice tailored to your situation.
+                    
+                    <br>
+
+                    Non-Solicitation: This website is not intended to be a solicitation for insurance products or services in any jurisdiction where we are not licensed to do business.
+                    
+                    <br>
+
+                    Indemnification: You agree to indemnify, defend, and hold harmless Progressive Insurance, its officers, directors, employees, and agents, from and against any and all claims, losses, damages, liabilities, costs, and expenses (including reasonable attorneys' fees) arising out of or in connection with your use of this website.
+                    
+                    <br>
+
+                    Limitation of Liability: Claim ease is not liable for any direct, indirect, incidental, special, or consequential damages arising out of or in connection with your use of this website, even if Claim ease has been advised of the possibility of such damages.
+                </p>
+        </div>
+    </footer>
+</html>
