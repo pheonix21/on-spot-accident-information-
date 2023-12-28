@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Insurance Admin Login</title>
+
+  <link rel="stylesheet" href="authentication.css">
+
+  </head>
+<body>
+  <div class="wrapper">
+    <form id="login-form" action="/login">
+      <h1>Login</h1>
+      <div class="input-box">
+        <input type="text" id="phone-number" placeholder="Phone Number" required>
+        <i class='bx bxs-phone'></i>
+      </div>
+      <div class="input-box">
+        <input type="text" id="policy-number" placeholder="Policy Number" required>
+        <i class='bx bxs-user'></i>
+      </div>
+      <button type="submit">Send OTP</button>
+    </form>
+
+    <form id="otp-form" action="/verify-otp">
+      <div class="input-box">
+        <input type="text" id="otp" placeholder="OTP" required>
+        <i class='bx bxs-phone'></i>
+      </div>
+      <button type="submit">login</button>
+    </form>
+
+    <div id="user-details"></div>
+  </div>
+  <script src="aaaaa.js"></script> </body>
+</html>
